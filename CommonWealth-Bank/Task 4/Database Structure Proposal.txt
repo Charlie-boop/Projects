@@ -1,0 +1,51 @@
+The database structure I propose is as follows:
+
+Tables:
+
+Table - Users
+FieldName: userID  Type: Integer (Primary Key)  Description: Unique user ID
+
+FieldName: userName  Type: Varchar  Description: Unique user handle
+
+FieldName: displayName  Type: Varchar  Description: Displayed user name
+
+
+Table- Tweets
+FieldName: tweetID  Type: Integer (Primary Key)  Description: Unique tweet ID
+
+FieldName: userID  Type: Integer (Foreign Key)  Description: user ID, referencing the author
+
+FieldName: tweetContent  Type: Text   Description: Tweet's content (nullable for retweets with no comment)
+
+FieldName: createdAt  Type: Date  Description: Time Stamp
+
+FieldName: parentID  Type: Integer (Foreign Key)  Description: Points to original tweet if reply/retweet
+
+FieldName: tweetType  Type: Enumerated  Description: Has "tweet", "reply", "retweet", and "quote" as possible values
+
+FieldName: favorites  Type: Integer  Description: Number of Likes
+
+FieldName: retweets  Type: Integer  Description: Number of Retweets
+
+FieldName: views  Type: Integer  Description: Number of Views
+
+
+Table- Mentions
+FieldName: userID  Type: Integer (Foreign Key)  Description: The mentioned user
+
+FieldName: tweetID  Type: Integer (Foreign Key)  Description: The tweet where the mention appears
+
+
+Relationships:
+
+User and Tweets - One To Many, with Tweets userID as the Foreign key. Reasoning: A user can author many tweets
+
+Tweets with itself - One To Many, with Tweets parentID as the Foreign key. Reasoning: Replies, retweets and quotes can all reference a tweet
+
+Tweets and Mentions - One To Many, with Mentions tweetID as the Foreign key. Reasoning: A tweet can mention many users
+
+Users and Mentions - One To Many, with Mentions userID as the Foreign key. Reasoning: A user can be mentioned in many tweets
+
+
+
+ 
