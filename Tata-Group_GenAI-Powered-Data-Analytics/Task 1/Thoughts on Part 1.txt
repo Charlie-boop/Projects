@@ -1,0 +1,12 @@
+Thoughts on Part 1
+
+I am required to think on questions about the dataset:
+What are the Key Variables?
+What categorical or numerical data points are there?
+Are there missing or inconsistent values?
+
+Ask the AI to like
+Analyze trends and correlations between columns in that dataset
+What key patterns are in the dataset and identify anomalies
+Suggest an imputation strategy for missing income values, loan balance values
+What indicators of delinquency risk are there? 

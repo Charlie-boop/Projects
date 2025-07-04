@@ -1,0 +1,41 @@
+How the System Works (Slide 2):
+
+Customer Data Collected:
+ID Number, Age, Income, Credit Score, Credit Utilization, Missed Payments, Delinquency Status, Loan Balance, Debt-to-Income Ratio, Employment Status, Account Tenure, Credit Card Type, Location and Payment History
+
+Decision Logic:
+The decision-making is guided by model predictions, in that it will do most of the math and pattern examination, but final decisions will be made by humans, obeying business logic.
+
+Actions:
+By missing 3 months, customers are targeted with a messaging campaign to encourage debt restructuring.
+Alerting the customer of their credit usage four times, upon reaching the 25%, 50%, 75% and 100% usage thresholds.
+Financial advising will be offered to customers earning less than $50,000 a year while also offering the opportunity for payment plans.
+
+Learning:
+The model will observe changes in Payment behavior and Credit Utilization to assess progress. The Agent then should adapt its response accordingly, with no intervention.
+
+Role of Agentic AI (Slide 3):
+
+Fully Automated Decisions Include:
+Sending Emails, Detecting unusual customer behavior, Making predictions regarding customer risk
+
+Human Decisions Include:
+Manual review of flagged customers, Assess model accuracy through SHAP values, Offering hardship plans
+
+Responsible AI Guardrails (Slide 4):
+
+The System will endure fairness through:
+Metrics like Equal Opportunity, Disparate Impact Ratios, Calibration within Groups and Feature Importance Auditing.
+The model will be monitored for any drift and trained on new data quarterly.
+Regulatory Compliance with local laws, GDPR and ECOA
+Outliers will be reviewed manually, Hardship Payments will be handled manually, Human Decisions use additional alternative data sources outside of the model.
+
+Expected Business Impact (Slide 5):
+
+The system should benefit Geldium's business objectives by producing two kinds of outcomes:
+Quantitative: Delinquencies should be reduced, Payment behaviors should shift more towards more repayments, Reduced labor costs, Overall risk reduction
+
+Qualitative: Improved customer satisfaction, Increased scalability, Improved fairness towards stakeholders, Data Interpretability should improve
+
+
+
