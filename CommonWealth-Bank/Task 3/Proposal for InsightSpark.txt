@@ -1,0 +1,4 @@
+Having extracted 21 recent posts from @CommBank handle (as more were not available to me through Twitter/X's API). I strongly suspect that this extremely limited output is because I am using the free tier. Regardless, I can make a few important observations:
+The posts were primarily addressing customer concerns about the Bank's service, who were likely experiencing issues (as people will more readily contact companies when having issues with a product or service), with the last few being posts clearly aiming to drive user engagement and enhance brand image.
+
+From this, I consider that InsightSpark can: gauge the perception/sentiment the customers have towards the brand, note the level of customer care oversight being provided by the account's manager, and track the success of the posts (particularly the ones seeking customer engagement!)
